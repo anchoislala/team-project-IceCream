@@ -1,0 +1,14 @@
+.products__item {
+  @media screen and (max-width: 767px) {
+  }
+  width: 280px;
+  height: 485px;
+  background-color: #ffb8ca;
+  border-radius: 24px;
+}
+
+.products__button {
+  width: 40px;
+  height: 40px;
+  background-repeat: 100%;
+}
