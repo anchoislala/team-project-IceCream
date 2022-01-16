@@ -1,11 +1,60 @@
-// .about {
-//   position: relative;
-//   padding-top: 125px;
-//   padding-bottom: 39px;
+.about {
+  padding-top: 125px;
+  background-color: $about-background-color;
+}
 
-//   background-image: url("");
-//   background-repeat: no-repeat;
-//   background-size: contain;
-//   background-position: 50% 80%;
+.about__pre-title {
+  margin-bottom: 15px;
+  color: $secondary-accent-color;
+  font-family: $secondary-font;
+  font-size: 18px;
+  line-height: 0.85;
+  text-align: center;
+  text-transform: uppercase;
+}
 
-//   background-color: $about-background-color;
+.about__title {
+  margin-bottom: 26px;
+  color: $main-accent-color;
+  font-family: $secondary-font;
+  font-weight: normal;
+  font-size: 34px;
+  line-height: 0.87;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.about__text {
+  font-family: $primary-font;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.62;
+  color: $main-dark-color;
+  margin-bottom: 47px;
+}
+
+.about__text-after {
+  font-family: $primary-font;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.62;
+  color: $secondary-dark-color;
+  margin-bottom: 47px;
+}
+
+.button-wraper {
+  margin-left: 50px;
+}
+
+.about__button {
+  width: 176px;
+  height: 44px;
+  background: #ffffff;
+  border-radius: 22px;
+  color: $main-accent-color;
+  font-family: $primary-font;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 18px;
+}
