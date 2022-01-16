@@ -7,15 +7,7 @@ button {
     margin: 0;
 }
 
-.container {
-    padding-right: 20px;
-    padding-left: 20px;
-    margin-right: auto;
-    margin-left: auto;
-@media screen and (max-width: 479px) {
-    max-width: 320px;
-    }
-}
+
 .header {
     margin-bottom: 137px;
     position: relative;
@@ -49,15 +41,7 @@ button {
     margin-bottom: 19px;
     } 
 }
-.button {
-    align-items: center;
-    text-align: center;
-    justify-items: center;
-    cursor: pointer;
-    border-radius: 22px;
-    border: none;
-    color: #d41443;
-}
+
 .close-btn {
     position: absolute;
     top: 23px;
