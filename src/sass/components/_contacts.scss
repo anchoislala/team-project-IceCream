@@ -75,3 +75,56 @@
 .contacts__item:nth-child(2n) .contacts__item-title {
   background: $shake-card-background-color;
 }
+
+.contacts__btn-list {
+  width: 100%;
+  justify-content: center;
+}
+
+.contacts__button.btn-pink,
+.contacts__button.btn-white {
+  font-size: 16px;
+  justify-content: center;
+  border-radius: 22px;
+  width: 161px;
+  padding: 0 17px;
+  height: 44px;
+  margin: 0 auto;
+}
+
+.contacts__btn-item:first-child {
+  margin-bottom: 10px;
+}
+
+.btn-pink {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  background-color: $button-accent-hover-color;
+  border: 0;
+  cursor: pointer;
+  color: $main-light-color;
+}
+
+.btn-white {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  background-color: $main-background-color;
+  border: 0;
+  cursor: pointer;
+  color: $main-accent-color;
+}
+
+.contacts__arrow {
+  display: block;
+  width: 12px;
+  height: 12px;
+  margin-left: 8px;
+  margin-top: 2px;
+  fill: $main-light-color;
+}
+
+.contacts__arrow--pink {
+  fill: $main-accent-color;
+}
