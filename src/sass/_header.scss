@@ -1,13 +1,4 @@
-a {
-    text-decoration: none;
-    color: inherit;
-    font-style: normal;
-}
-img {
-    display: block;
-    max-width: 100%;
-    height: auto;
-}
+
 button {
     text-transform: none;
     font-family: inherit;
@@ -156,11 +147,17 @@ button {
     width: 346px;
     height: 420px;
 }
-.hero__circle {
-    background: #ffa5ba;
-    border-radius: 50%;
+.hero__circle:before {
+    content: "";
+    display: block;
+    position: absolute;
     width: 346px;
     height: 346px;
+    border-radius: 50%;
+    top: -215px;
+    left: -28%;
+    background: #ffa5ba;
+    z-index: 0;
 }
 .hero__image {
     position: absolute;
