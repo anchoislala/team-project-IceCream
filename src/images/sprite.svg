@@ -4,7 +4,7 @@
 <path fill="none" stroke="#d41443" stroke-width="2" stroke-miterlimit="4" stroke-linecap="butt" stroke-linejoin="miter" style="stroke: var(--color1, #d41443)" d="M2.52 2l26.96 28M2 29.48l28-26.96"></path>
 </symbol>
 <symbol id="icon-accept" viewBox="0 0 32 32">
-<path fill="#d41443" style="fill: var(--color1, #d41443)" d="M4 1h24c2.209 0 4 1.791 4 4v22c0 2.209-1.791 4-4 4h-24c-2.209 0-4-1.791-4-4v-22c0-2.209 1.791-4 4-4z"></path>
+<path  d="M4 1h24c2.209 0 4 1.791 4 4v22c0 2.209-1.791 4-4 4h-24c-2.209 0-4-1.791-4-4v-22c0-2.209 1.791-4 4-4z"></path>
 <path fill="#fff" style="fill: var(--color2, #fff); stroke: var(--color2, #fff)" stroke="#fff" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="0.4" d="M7.914 16.504l-0.138-0.132-0.138 0.13-1.928 1.828 0.152 0.146 7.13 6.8 0.138-0.132 15.16-14.462-0.152-0.144-1.902-1.814-0.138 0.132-13.106 12.492-5.078-4.844z"></path>
 </symbol>
 <symbol id="icon-check" viewBox="0 0 32 32">

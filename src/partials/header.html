@@ -1,23 +1,52 @@
 
 
-<section class="hero" id=#Home>
+<section class="hero" id=Home>
     <div class="container">
         <header class="header">
             <div class="menu"> <a class="logo__links" href=""> 
                 <img src="./images/logo.png" 
                     alt="logo ice cream"> </a> 
-                <button class="burger-btn js-open-menu" aria-expanded="false" aria-controls="mobile-menu"> 
-                    <svg class="burger-icon">
-                        <use href=""></use>
-                    </svg> 
-                </button> 
-        <div class="js-menu-container menu-container" id="mobile-menu"> 
-                    <button class="close-btn js-close-menu">
-                        <svg class="close-btn-icon">
-                            <use href=""></use>
-                        </svg> 
-            </button> 
-        </div>
+
+            
+                            <div class="button__container">
+                            <button class="open-menu-btn"><svg class="menu-icon" width="20" height="12">
+                                <use href="./images/icons/sprite.svg#icon-burger-btn"></use>
+                            </svg></button>
+            
+                            <button class="header-buy_btn" header-modal-open>Buy now<svg class="buy-icon" width="20" height="12">
+                                <use href="./images/icons/sprite.svg#icon-arrow"></use>
+                            </svg></button>
+                        </div>
+                            <div class="mob-menu is-hidden">
+                                <div class="mob-menu__container">
+                            
+                                    <button class="buy_btn" data-modal-open>Buy now<svg class="buy-icon" width="20" height="12">
+                                        <use href="./images/icons/sprite.svg#icon-arrow"></use>
+                                    </svg></button>
+                                    
+                                    <div class="menu-nav__container">   
+                                    
+                                <ul class="menu-nav__list">
+                                    
+                                    <li class="menu-nav__item"> <a href="#Home" class="menu-nav__link menu-nav__current">Home</a></li>
+                                    
+                                    <li class="menu-nav__item"><a href="#About_us" class="menu-nav__link link">About us</a></li>
+                                    
+                                    <li class="menu-nav__item"><a href="#How_it’s_made?" class="menu-nav__link link">How it’s made?</a></li>
+                                    
+                                    <li class="menu-nav__item"><a href="#Our_products" class="menu-nav__link link">Our products</a></li>
+                                    
+                                    <li class="menu-nav__item"><a href="#Contact" class="menu-nav__link link">Contact</a></li>
+                                    
+                                </ul>
+                            
+                                <button class="close-menu-btn"><svg class="close-icon" width="14" height="14">
+                                        <use href="./images/icons/sprite.svg#icon-close-btn"></use>
+                                    </svg></button>
+                                </div>
+                                </div>
+                            </div>
+
     </div>
 </header>
     <div class="hero__contents">
@@ -37,5 +66,7 @@
             </div>
         </div>
 </div>
+
+
     
 </section>
