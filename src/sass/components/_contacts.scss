@@ -27,6 +27,9 @@
     display: flex;
     max-width: 768px;
     margin-bottom: 81px;
+    & li:last-child {
+      margin-right: 0;
+    }
   }
 }
 
