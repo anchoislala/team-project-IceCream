@@ -1,9 +1,10 @@
+
 .advantages {
   padding-bottom: 48px;
   padding-top: 38px;
   align-items: baseline;
-  background: $about-background-color;
 
+  background: #fff5f6;
   @media screen and (min-width: 768px) {
     padding-bottom: 140px;
   }
@@ -11,8 +12,7 @@
     padding-bottom: 139px;
   }
 }
-
-.advantages_box {
+.advantages__box {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -24,11 +24,11 @@
     flex-direction: row;
   }
 }
-
-.advantages_elem {
+.advantages__elem {
   display: flex;
   flex-direction: column;
   justify-content: center;
+
   @media screen and (min-width: 768px) {
     flex-direction: row;
     height: 226px;
@@ -40,8 +40,7 @@
     height: 222px;
   }
 }
-
-.advantages_list {
+.advantages__list {
   list-style: none;
   @media screen and (min-width: 768px) {
   }
@@ -51,8 +50,7 @@
     margin-right: 30px;
   }
 }
-
-.advantages_icon {
+.advantages__icon {
   width: 50px;
   height: 50px;
   list-style: none;
@@ -62,53 +60,59 @@
     margin-bottom: 36px;
   }
   @media (min-width: 1280px) {
-    margin-top: 36px;
+    margin-top: 38px;
     margin-bottom: 40px;
   }
 }
-
-.advantages_icon1::before {
+.advantages__icon1::before {
   content: url(/images/png/icon1.png);
 }
-.advantages_icon2::before {
+.advantages__icon2::before {
   content: url(/images/png/icon2.png);
 }
-.advantages_icon3::before {
+.advantages__icon3::before {
   content: url(/images/png/icon3.png);
 }
-.advantages_fact {
+.advantages__fact {
   font-family: Titan One;
   font-weight: 400;
   letter-spacing: 0.04em;
-  font-style: 36px;
+  font-size: 36px;
   line-height: 1.13px;
-  color: $main-accent-color;
+  color: #d41443;
   padding-top: 16px;
   margin-bottom: 54px;
 
   @media screen and (min-width: 768px) {
     line-height: 1.14;
-    font-style: 55px;
+    font-size: 55px;
     margin-bottom: 13px;
     padding-top: 0px;
   }
+  @media screen and (min-width: 1280px) {
+    font-size: 58px;
+    line-height: 1.37;
+    margin-bottom: 15px;
+    padding-top: 0px;
+  }
 }
-
-.advantages_text {
-  font-size: 14px;
-  line-height: 1.74;
+.advantages__text {
+  font-family: 'DM Sans';
+  letter-spacing: 0.02em;
+  font-size: 12px;
+  line-height: 1.7;
   font-weight: 700;
-  color: $main-dark-color;
+  color: black;
+  list-style: none;
   padding-bottom: 38px;
-
   @media screen and (min-width: 768px) {
     padding-bottom: 0px;
-    font-style: 14px;
+    font-size: 14px;
     line-height: 1.74;
   }
   @media screen and (min-width: 1280px) {
     padding-bottom: 0px;
-    font-style: 16px;
+    font-size: 16px;
     line-height: 1.76;
   }
 }
