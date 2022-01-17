@@ -8,9 +8,11 @@
 @import './utils/reset';
 @import './utils/visually-hidden';
 @import './components/base';
+@import "./mixins";
 @import './components/container';
 @import './header';
 @import './products';
+@import "./advantages";
 @import './layout/about';
 @import './gallery';
 @import './customer-reviews';
