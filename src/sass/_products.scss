@@ -1,74 +1,112 @@
+.products {
+  padding-bottom: 98px;
+  padding-top: 121px;
+}
+
 .products__title {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 144px;
 
   &--label {
     display: inline-block;
     margin-bottom: 15px;
-    font-family: Titan One;
+    font-family: $secondary-font;
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
     line-height: 21px;
     text-align: center;
     text-transform: uppercase;
-    color: #ffa5ba;
+    color: $secondary-accent-color;
   }
 
   &--main {
     display: block;
-    font-family: Titan One;
+    font-family: $secondary-font;
     font-style: normal;
-    font-weight: normal;
+    font-weight: bold;
     font-size: 34px;
     line-height: 39px;
     text-align: center;
     letter-spacing: 0.04em;
     text-transform: uppercase;
-    color: #d41443;
+    color: $main-accent-color;
   }
-}
-
-.products__grid {
-  list-style: none;
-  padding: 0;
 }
 
 .products__item {
+  position: relative;
   width: 280px;
   height: 485px;
-  background-color: #ffb8ca;
+  background-color: $cream-card-background-color;
   border-radius: 24px;
   border: 1px solid transparent;
-  margin-bottom: 130px;
   margin-left: auto;
   margin-right: auto;
 
+  &::before {
+    position: absolute;
+    left: 16px;
+    top: -113px;
+    display: block;
+    content: '';
+    width: 249px;
+    height: 252px;
+    background-repeat: no-repeat;
+    background-image: url(../images/mobile/products/mob-icecream1x.png);
+    background-position: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   &--coffee {
-    background-color: #f0d1a5;
+    background-color: $coffee-card-background-color;
+
+    &::before {
+      position: absolute;
+      left: 16px;
+      top: -113px;
+      display: block;
+      content: '';
+      width: 249px;
+      height: 252px;
+      background-repeat: no-repeat;
+      background-image: url(../images/mobile/products/mob-icecoffee1x.png);
+      background-position: center;
+      margin-left: auto;
+      margin-right: auto;
+    }
   }
 
   &--milkshakes {
-    background-color: #c2e297;
+    background-color: $shake-card-background-color;
+
+    &::before {
+      position: absolute;
+      left: 16px;
+      top: -113px;
+      display: block;
+      content: '';
+      width: 249px;
+      height: 252px;
+      background-repeat: no-repeat;
+      background-image: url(../images/mobile/products/mob-milkshakes1x.png);
+      background-position: center;
+      margin-left: auto;
+      margin-right: auto;
+    }
   }
 
-  //   &::before {
-  //     display: block;
-  //     content: '';
-  //     margin-left: auto;
-  //     margin-right: auto;
-  //     margin-bottom: 30px;
-  //     width: 30px;
-  //     height: 10px;
-  //     border: 1px solid black;
-  //     border-radius: 5%;
-  //   }
+  &:not(:last-child) {
+    margin-bottom: 130px;
+  }
 }
 
 .products__item-title {
   margin-top: 161px;
-  font-family: Titan One;
+  font-family: $secondary-font;
   font-style: normal;
   font-weight: normal;
   font-size: 20px;
@@ -76,22 +114,21 @@
   text-align: center;
   letter-spacing: 0.04em;
   text-transform: uppercase;
-  color: #ffffff;
+  color: $main-light-color;
 }
 
 .products__description {
   width: 200px;
-  margin-top: 66px;
   margin-left: auto;
   margin-right: auto;
-  font-family: DM Sans;
+  font-family: $primary-font;
   font-style: normal;
   font-weight: bold;
   font-size: 14px;
   line-height: 152%;
   text-align: center;
   letter-spacing: 0.04em;
-  color: #ffffff;
+  color: $main-background-color;
 
   &::before {
     display: block;
@@ -99,18 +136,31 @@
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 30px;
-    width: 30px;
-    height: 10px;
-    border: 1px solid black;
-    border-radius: 5%;
+    margin-top: 30px;
+    width: 26px;
+    height: 6px;
+    background-image: url(../images/icon-dots-products-div.png);
+    background-repeat: no-repeat;
+    background-position: center;
   }
 }
 
 .products__btn {
   display: block;
+  background-color: $review-background-color;
   width: 40px;
   height: 40px;
+  padding: 0;
   margin-top: 30px;
   margin-left: auto;
   margin-right: auto;
+  border: 1px solid transparent;
+  border-radius: 50%;
+}
+
+.produsts__btn--img {
+  width: 20px;
+  height: 15px;
+  margin-top: 7px;
+  fill: $button-accent-hover-color;
 }
