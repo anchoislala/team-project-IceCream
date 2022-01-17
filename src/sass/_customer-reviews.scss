@@ -1,0 +1,82 @@
+.feedback {
+  background-color: $main-background-color;
+}
+
+////////////// Feedback
+.feedback {
+  display: flex;
+  justify-content: center;
+  padding-top: 80px;
+  padding-bottom: 86px;
+}
+
+.feedback__photo--container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 29px;
+}
+
+.feedback__text--container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 239px;
+  padding: 43px 66px 26px 57px;
+  background-color: $review-background-color;
+}
+.feedback__text--container::after {
+  content: '';
+  position: absolute;
+  top: 24px;
+  left: 43px;
+  width: 54px;
+  height: 40px;
+  background-image: url(../images/reviews-icon-paws.svg);
+  background-repeat: no-repeat;
+  fill: $review-gradient-color;
+}
+
+.feedback__client-icon {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  width: 85px;
+  height: 85px;
+}
+.feedback__text {
+  font-family: $primary-font;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 2.3;
+  width: 100%;
+  text-align: center;
+  color: #000000;
+  z-index: 3;
+}
+
+.text__linear--gradient {
+  background-color: $review-gradient-color;
+  background: repeating-linear-gradient(
+    to bottom,
+    transparent,
+    transparent 26px,
+    $review-gradient-color 1px,
+    $review-gradient-color 28px
+  );
+  z-index: 5;
+  width: 180px;
+}
+
+.feedback__address {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 18px;
+  margin-bottom: 30px;
+  font-family: $primary-font;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.86;
+}

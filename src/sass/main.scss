@@ -1,3 +1,20 @@
-@import "./utils/main";
-@import "./components/main";
-@import "./layouts/main";
+/*
+ * Главный файл стилей.
+ * Все паршалы подключаются сюда.
+ */
+
+// Стили для файла с примером HTML-фрагмента
+@import './utils/var';
+@import './utils/reset';
+@import './utils/visually-hidden';
+@import './components/base';
+@import "./mixins";
+@import './components/container';
+@import './header';
+@import './products';
+@import "./advantages";
+@import './layout/about';
+@import './gallery';
+@import './customer-reviews';
+@import './components/contacts';
+@import './footer';
