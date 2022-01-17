@@ -8,12 +8,12 @@
 @import './utils/reset';
 @import './utils/visually-hidden';
 @import './components/base';
-@import "./mixins";
+@import './utils/mixins';
 @import './components/container';
 @import './header';
 @import './products';
-@import "./advantages";
 @import './layout/about';
+@import './layout/advantages';
 @import './gallery';
 @import './customer-reviews';
 @import './components/contacts';
