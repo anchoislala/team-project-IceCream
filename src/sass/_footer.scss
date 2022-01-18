@@ -188,3 +188,15 @@
     letter-spacing: 0.02em;
   }
 }
+
+@media screen and (min-width: 1280px) {
+  #myAnimation {
+    position: absolute;
+  }
+}
+
+.footer__animation {
+  @media screen and (max-width: 1279px) {
+    display: none;
+  }
+}
