@@ -1,12 +1,29 @@
 .contacts {
   padding: 48px 0 113px;
   margin: 0 auto;
+  background-color: $about-background-color;
+  background-repeat: no-repeat;
+  background-position: 50%;
   @media screen and (max-width: 767px) {
     background: linear-gradient(180deg, $main-background-color 172px, $about-background-color 0);
   }
   @media screen and (min-width: 768px) and (max-width: 1279px) {
     background: linear-gradient(180deg, $main-background-color 197px, $about-background-color 0);
     padding: 69px 0 158px;
+  }
+  @media not all,
+    screen and (min-width: 1280px) and (min-resolution: 1dppx),
+    screen and (min-width: 1280px) and (min-resolution: 96dpi) {
+    background-image: url(/images/desktop/contacts/contacts-bg-1x.png),
+      linear-gradient(180deg, $main-background-color 230px, $about-background-color 0);
+  }
+  @media not all,
+    screen and (min-width: 1280px) and (min-resolution: 2dppx),
+    screen and (min-width: 1280px) and (min-resolution: 192dpi) {
+    background-image: url(/images/desktop/contacts/contacts-bg-2x.png),
+      linear-gradient(180deg, $main-background-color 230px, $about-background-color 0);
+    background-size: 1920px 384px, auto;
+    background-position: 50%, top;
   }
 }
 .contacts__container {
@@ -16,6 +33,11 @@
     width: 768px;
     padding-right: 34px;
     padding-left: 34px;
+  }
+  @media screen and (min-width: 1280px) {
+    width: 1280px;
+    padding-right: 115px;
+    padding-left: 115px;
   }
 }
 .contacts__list {
@@ -30,6 +52,10 @@
     & li:last-child {
       margin-right: 0;
     }
+  }
+  @media screen and (min-width: 1280px) {
+    max-width: 1150px;
+    margin-bottom: 86px;
   }
 }
 
@@ -47,6 +73,12 @@
     margin-bottom: 0;
     padding: 50px 32px 50px 31px;
   }
+  @media screen and (min-width: 1280px) {
+    // width: 383.33333px;
+    margin-right: 31px;
+    padding: 51px 44px 51px 43px;
+    font-size: 16px;
+  }
 }
 
 .contacts__item-title {
@@ -63,6 +95,9 @@
   @media screen and (min-width: 768px) {
     font-size: 16px;
     margin-bottom: 30px;
+  }
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 32px;
   }
 }
 
@@ -88,10 +123,19 @@
   @media screen and (min-width: 768px) {
     margin: 30px 0;
   }
+  @media screen and (min-width: 1280px) {
+    margin: 32px 0;
+  }
 }
 
 .contacts__item-when li:nth-child(2n) {
   margin-bottom: 10px;
+}
+
+.contacts__item-where li:last-child {
+  @media screen and (min-width: 1280px) {
+    line-height: 1.83;
+  }
 }
 
 .contacts__item--pink {
