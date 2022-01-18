@@ -111,4 +111,9 @@
     font-style: 16px;
     line-height: 1.76;
   }
+
+     &:not(:last-child) {
+    margin-bottom: 38px;
+  }
+   
 }
