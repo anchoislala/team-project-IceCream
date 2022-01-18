@@ -311,14 +311,11 @@ button {
     }
   }
   
-  .menu-nav__current{
-    color: $main-accent-color;
-  }
 
   .button__container{
     display: flex;
     align-items: center;
-    margin-top: 15px;
+    
   }
 
   .header-buy_btn{
@@ -339,7 +336,6 @@ button {
     align-items: center;
     width: 160px;
     height: 44px;
-    margin-bottom: 20px;
     transition: filter $duration $function, ;
 
   
@@ -347,4 +343,44 @@ button {
       filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     }
   }
+
+  @media screen and (min-width: 1280px) {
+    margin-left: 110px;
+  }
+  }
+.header-nav__container{
+  @media screen and (min-width: 1280px) {
+  margin-left: 110px;
+}
+
+}
+  .header-nav__list{
+    display: none;
+
+    @media screen and (min-width: 1280px) {
+      display: flex;
+
+  }
+}
+
+  .header-nav__link{
+   
+    font-family:$primary-font;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.31;
+    color: $main-light-color;
+  }
+
+
+  .menu-nav__current{
+    color: $main-accent-color;
+  }
+
+  .header-nav__item {
+    margin-right: 35px;
+
+    &:last-child{
+      margin-right: 0px;
+    }
   }
