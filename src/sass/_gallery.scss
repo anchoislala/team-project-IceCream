@@ -25,10 +25,22 @@
   @media screen and (min-width: 480px) {
     padding-left: 60px;
   }
+  @media screen and (min-width: 768px) {
+    max-width: 768px;
+  }
+  @media screen and (min-width: 1200px) {
+    max-width: 1080px;
+  }
 }
 .wrapper-container {
   position: relative;
   height: 122px;
+  @media screen and (min-width: 768px) {
+    height: 264px;
+  }
+  @media screen and (min-width: 1200px) {
+    height: 430px;
+  }
 }
 .section-gallery__wrapper {
   width: 40px;
@@ -36,21 +48,53 @@
   border-radius: 10px;
   overflow: hidden;
   background-color: $main-background-color;
+  @media screen and (min-width: 768px) {
+    width: 80px;
+    height: 80px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: calc(80px * 1.6);
+    height: calc(80px * 1.6);
+  }
 }
 .section-gallery__wrapper--img1 {
   position: absolute;
   top: 40px;
   left: 20px;
+  @media screen and (min-width: 768px) {
+    top: 40px * 2;
+    left: 20px * 2;
+  }
+  @media screen and (min-width: 1200px) {
+    top: calc((40px * 2) * 1.6);
+    left: calc((20px * 2) * 1.6);
+  }
 }
 .section-gallery__wrapper--img2 {
   position: absolute;
   top: 20px;
   left: 63px;
+  @media screen and (min-width: 768px) {
+    top: 20px * 2;
+    left: 63px * 2;
+  }
+  @media screen and (min-width: 1200px) {
+    top: calc((20px * 2) * 1.6);
+    left: calc((63px * 2) * 1.6);
+  }
 }
 .section-gallery__wrapper--img3 {
   position: absolute;
   top: 63px;
   left: 63px;
+  @media screen and (min-width: 768px) {
+    top: 63px * 2;
+    left: 63px * 2;
+  }
+  @media screen and (min-width: 1200px) {
+    top: calc((63px * 2) * 1.6);
+    left: calc((63px * 2) * 1.6);
+  }
 }
 .section-gallery__wrapper--img4 {
   width: 40px * 2;
@@ -58,34 +102,94 @@
   position: absolute;
   top: 0px;
   left: 106px;
+  @media screen and (min-width: 768px) {
+    width: 80px * 2;
+    height: 80px * 2;
+    top: 0px * 2;
+    left: 106px * 2;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 80px * 2 * 1.6;
+    height: 80px * 2 * 1.6;
+    top: calc((0px * 2) * 1.6);
+    left: calc((106px * 2) * 1.6);
+  }
 }
 .section-gallery__wrapper--img5 {
   position: absolute;
   top: 83px;
   left: 106px;
+  @media screen and (min-width: 768px) {
+    top: 83px * 2;
+    left: 106px * 2;
+  }
+  @media screen and (min-width: 1200px) {
+    top: calc((83px * 2) * 1.6);
+    left: calc((106px * 2) * 1.6);
+  }
 }
 .section-gallery__wrapper--img6 {
   position: absolute;
   top: 23px;
   left: 189px;
+  @media screen and (min-width: 768px) {
+    top: 23px * 2;
+    left: 189px * 2;
+  }
+  @media screen and (min-width: 1200px) {
+    top: calc((23px * 2) * 1.6);
+    left: calc((189px * 2) * 1.6);
+  }
 }
 .section-gallery__wrapper--img7 {
   position: absolute;
   top: 66px;
   left: 189px;
+  @media screen and (min-width: 768px) {
+    top: 66px * 2;
+    left: 189px * 2;
+  }
+  @media screen and (min-width: 1200px) {
+    top: calc((66px * 2) * 1.6);
+    left: calc((189px * 2) * 1.6);
+  }
 }
 .section-gallery__wrapper--img8 {
   position: absolute;
   top: 10px;
   left: 232px;
+  @media screen and (min-width: 768px) {
+    top: 10px * 2;
+    left: 232px * 2;
+  }
+  @media screen and (min-width: 1200px) {
+    top: calc((10px * 2) * 1.6);
+    left: calc((232px * 2) * 1.6);
+  }
 }
 .section-gallery__wrapper--img9 {
   position: absolute;
   top: 53px;
   left: 232px;
+  @media screen and (min-width: 768px) {
+    top: 53px * 2;
+    left: 232px * 2;
+  }
+  @media screen and (min-width: 1200px) {
+    top: calc((53px * 2) * 1.6);
+    left: calc((232px * 2) * 1.6);
+  }
 }
 .section-gallery__wrapper--img10 {
   position: absolute;
   top: 40px;
   left: 275px;
+  @media screen and (min-width: 768px) {
+    top: 40px * 2;
+    left: 275px * 2;
+  }
+  @media screen and (min-width: 1200px) {
+    top: calc((40px * 2) * 1.6);
+    left: calc((275px * 2) * 1.6);
+  }
 }
