@@ -10,11 +10,25 @@
     padding-top: 130px;
     padding-bottom: 66px;
   }
+  @media screen and (min-width: 1280px) {
+    padding-bottom: 39px;
+    background-image: url('../images/desktop/about/bckg-milk.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 100% 100%;
+  }
 }
 
 .about__container {
   padding-left: 50px;
   padding-right: 50px;
+  width: 100%;
+  @media screen and (min-width: 768px) {
+    width: 768px;
+  }
+  @media screen and (min-width: 1280px) {
+    width: 1280px;
+  }
 }
 
 .about__pre-title {
@@ -44,12 +58,21 @@
 .about__wrapper-image {
   min-width: 280px;
   margin-right: 15px;
+  @media screen and (min-width: 768px) {
+    min-width: 340px;
+    margin-right: 17px;
+  }
+  @media screen and(min-width: 1280px) {
+    min-width: 516px;
+    margin-right: 74px;
+  }
 }
 
 .about__img {
   display: block;
   max-width: 100%;
   height: auto;
+  animation: float 3s $function infinite;
 }
 
 .about__wraper {
@@ -70,6 +93,12 @@
     font-size: 14px;
     line-height: 1.76;
   }
+  @media screen and (min-width: 1280px) {
+    font-size: 16px;
+    line-height: 1.76;
+    width: 463px;
+    height: 79px;
+  }
 }
 
 .about__text-after {
@@ -82,6 +111,12 @@
     font-size: 14px;
     line-height: 1.76;
     letter-spacing: 0.04em;
+  }
+  @media screen and (min-width: 1280px) {
+    font-size: 14px;
+    line-height: 1.94;
+    width: 463px;
+    height: 155px;
   }
 }
 
@@ -124,4 +159,59 @@
     align-items: flex-end;
     margin-bottom: 56px;
   }
+  @media screen and(min-width: 1280px) {
+    display: none;
+  }
+}
+
+// desktop
+.about__desktop {
+  display: none;
+  @media screen and (min-width: 1280px) {
+    width: 1280px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+  }
+}
+
+// modal
+
+.about__title-modal {
+  margin-bottom: 50px;
+  color: $main-accent-color;
+  font-family: $secondary-font;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 0.87;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.about__modal-item {
+  margin-bottom: 10px;
+}
+
+.about__modal-text {
+  font-weight: 500;
+  color: $main-dark-color;
+  font-size: 16px;
+  line-height: 1.76;
+}
+
+// .about__text-modal {
+//   font-weight: 500;
+//   font-size: 16px;
+//   line-height: 1.76;
+//   color: $main-dark-color;
+// }
+
+.modal__btn {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  border: none;
+  background-color: transparent;
+
+  cursor: pointer;
 }
