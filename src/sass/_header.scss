@@ -412,6 +412,7 @@ button {
       margin-right: 0px;
     }
   }
+
 .milk__thumb {
     display: flex;
 @media screen and (max-width: 767px) {
@@ -534,3 +535,45 @@ button {
     line-height: 1.29;
 }
 }
+
+  @keyframes icecream {
+    100% {
+         transform: translate(0, 100px);
+      }
+      
+  }
+
+  .icecream{
+    animation-name: icecream;
+    animation-duration: 3s;
+    animation-timing-function: 999;
+    animation-direction: alternate-reverse;
+    
+  }
+
+  .hero__yoda-container{
+  content: '';
+  display: block;
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  top: -64px;
+  left: -5%;
+  z-index: 0;
+  }
+
+  // @keyframes yoda {
+  //   50% {
+  //        transform: translate(0, 300px);
+  //     }
+      
+  // }
+
+  // .yoda-img{
+  //     animation-name: yoda;
+  //     animation-duration: 3s;
+  //     animation-timing-function: 999;
+  //     animation-direction: alternate-reverse;
+      
+  // }

@@ -1,27 +1,82 @@
-<!-- Section feedback -->
-<h2 class="is-hidden">Feedback</h2>
-<section class="feedback">
-  <div class="container">
-    <div class="feedback__photo--container">
-      <img
-        srcset="
-          ./images/mobile/customer-reviews/emily-1x.png 1x,
-          ./images/mobile/customer-reviews/emily-1x.png 2x
-        "
-        src="./images/mobile/customer-reviews/emily-1x.png"
-        alt="client photo"
-        class="feedback__photo feedback__client-icon"
-      />
+<section class="slider-setion">
+  <div class="slider container" id="about">
+
+    <div class="clear-slider">
+      <input type="radio" class="slider-point-1" name="slider" aria-label="Main slide" checked="">
+                    <span class="slider__mark">1</span>
+                    <input type="radio" class="slider-point-2" name="slider" aria-label="Prev slide">
+                    <span class="slider__mark">2</span>
+                    <input type="radio" class="slider-point-3" name="slider" aria-label="Next slide">
+                    <span class="slider__mark">3</span>
+
+          <ul class="list">
+            <li>
+              <picture>
+              <source srcset="./images/mobile/customer-reviews/emily-1x.png 1x, ./images/mobile/customer-reviews/emily-1x.png 2x" type="image/png" media="(min-width:50px)">
+              <img class="slider__photo" src="./images/mobile/customer-reviews/emily-1x.png" alt="Emily" loading="lazy">
+            </picture>
+
+            <div class="slider__description">
+              <svg class="slider__quotes"><use href="./images/icons/sprite.svg#quotes"></use></svg>
+              <div class="slider__wrapper">
+                <p class="slider__text">Nullam viverra consectetuer. Quisque cursus et, porttitor risus. Aliquam sem. In hendrerit nulla quam nunc, accumsan congue. Lorem ipsum primis in nibh vel risus. </p>
+                <div class="slider__stripes"></div>
+            </div>
+        </div>
+        <div class="slider__circle">
+          <span class="slider__circle--icon"></span>
+          <span class="slider__circle--icon"></span>
+          <span class="slider__circle--icon"></span>
+        </div>
+        <p class="slider__name">Emily, Kyiv</p>
+            </li>
+
+
+            <li>
+              <picture>
+              <source srcset="./images/mobile/customer-reviews/Jessica1x.png 1x, ./images/mobile/customer-reviews/Jessica2x.png 2x" type="image/png" media="(min-width:50px)">
+              <img class="slider__photo" src="./images/mobile/customer-reviews/Jessica1x.png" alt="Emily" loading="lazy">
+            </picture>
+            <div class="slider__description">
+              <svg class="slider__quotes"><use href="./images/icons/sprite.svg#quotes"></use></svg>
+              <div class="slider__wrapper">
+                <p class="slider__text"> Nullam viverra consectetuer. Quisque cursus et, porttitor risus. Aliquam sem. In hendrerit nulla quam nunc, accumsan congue. Lorem ipsum primis in nibh vel risus. </p>
+                <div class="slider__stripes"></div>
+            </div>
+        </div>
+        <div class="slider__circle">
+          <span class="slider__circle--icon"></span>
+          <span class="slider__circle--icon"></span>
+          <span class="slider__circle--icon"></span>
+        </div>
+        <p class="slider__name">Anna, Odesa</p>
+            </li>
+
+
+            <li>
+              <picture>
+              <source srcset="./images/mobile/customer-reviews/Sara1x.png 1x, ./images/mobile/customer-reviews/Sara2x.png 2x" type="image/png" media="(min-width:50px)">
+              <img class="slider__photo" src="./images/mobile/customer-reviews/Sara1x.png" alt="Emily" loading="lazy">
+            </picture>
+            <div class="slider__description">
+              <svg class="slider__quotes"><use href="./images/icons/sprite.svg#quotes"></use></svg>
+              <div class="slider__wrapper">
+                <p class="slider__text"> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates quasi ducimus nobis maxime eligendi doloremque. </p>
+                <div class="slider__stripes"></div>
+            </div>
+        </div>
+
+        <div class="slider__circle">
+          <span class="slider__circle--icon"></span>
+          <span class="slider__circle--icon"></span>
+          <span class="slider__circle--icon"></span>
+        </div>
+        <p class="slider__name">Irina, Lviv</p>
+            </li>
+      </ul>
     </div>
 
-    <div class="feedback__text--container">
-      <div class="text__linear--gradient">
-        <p class="feedback__text">
-          Nullam viverra consectetuer. Quisque cursus et, porttitor risus. Aliquam sem. In hendrerit
-          nulla quam nunc, accumsan congue. Lorem ipsum primis in nibh vel risus.
-        </p>
-      </div>
-    </div>
-    <h3 class="feedback__address">Emily, Los Angeles</h3>
   </div>
+
+
 </section>
