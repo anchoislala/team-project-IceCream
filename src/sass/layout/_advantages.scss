@@ -1,7 +1,7 @@
 
 .advantages {
   padding-bottom: 48px;
-  padding-top: 38px;
+   
   align-items: baseline;
 
   background: #fff5f6;
@@ -47,7 +47,7 @@
   @media screen and (min-width: 1280px) {
   }
   &:not(:last-child) {
-    margin-right: 30px;
+    margin-right: 60px;
   }
 }
 .advantages__icon {
@@ -56,8 +56,8 @@
   list-style: none;
   margin-bottom: 16px;
   @media (min-width: 768px) {
-    margin-top: 66px;
-    margin-bottom: 36px;
+
+
   }
   @media (min-width: 1280px) {
     margin-top: 38px;
@@ -80,8 +80,7 @@
   font-size: 36px;
   line-height: 1.13;
   color: #d41443;
-  padding-top: 16px;
-  margin-bottom: 54px;
+
 
   @media screen and (min-width: 768px) {
     line-height: 1.14;
