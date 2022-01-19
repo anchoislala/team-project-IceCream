@@ -77,17 +77,40 @@ button {
   text-transform: uppercase;
   color: #fff;
   width: 218px;
+  @media screen and (min-width: 768px) {
+    font-size: 22px;
+    line-height: 1.14;
+    width: 162px;
+}
+  @media screen and (min-width: 1280px) {
+    font-size: 38px;
+    line-height: 1.16;
+    width: 277px;
+}
 }
 .hero__accent {
   font-family: 'Titan One', cursive;
   font-size: 48px;
   line-height: 0.96;
   color: #d41443;
+@media screen and (min-width: 768px) {
+    font-size: 34px;
+    line-height: .91;
+}
+@media screen and (min-width: 1280px) {
+    font-size: 58px;
+}
+
 }
 .hero__tittle-btn {
   display: flex;
   margin-top: 19px;
   margin-bottom: 19px;
+  
+@media screen and (min-width: 1280px) {
+    margin-top: 25px;
+    margin-bottom: 56px;
+}
 }
 .hero__btn {
   display: flex;
@@ -131,6 +154,11 @@ button {
   width: 346px;
   height: 420px;
   z-index: 0;
+  @media screen and (min-width: 1280px){
+    width: 538px;
+    height: 594px;
+    //transform: translate(-35%,-38%);
+}
 }
 .hero__circle::after {
   content: '';
@@ -384,6 +412,129 @@ button {
       margin-right: 0px;
     }
   }
+
+.milk__thumb {
+    display: flex;
+@media screen and (max-width: 767px) {
+    display: none;
+}
+@media screen and (min-width: 1280px) {
+    align-items: flex-end;
+}
+}
+
+
+.milk__thumb-text {
+    width: 114px;
+    height: 75px;
+    padding-top: 20px;
+@media screen and (min-width: 1280px) {
+    width: 200px;
+    height: 125px;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+}
+.milk__text {
+    font-weight: 400;
+    font-size: 8px;
+    line-height: 1.5;
+    color: #fff;
+    margin-bottom: 20px;
+@media screen and (min-width: 1280px) {
+    font-size: 14px;
+    line-height: 1.4;
+}
+}
+.milk__thumb-svg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    cursor: pointer;
+    border: none;
+    transform: rotate(0);
+    transition: transform .25s cubic-bezier(.4,0,.2,1);
+}
+.milk__svg {
+    fill: #d41443;
+    width: 10px;
+    height: 10px;
+}
+.girl__thumb {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    transform: translateY(21%);
+@media screen and (max-width: 767px) {
+    display: none;
+}
+@media screen and (min-width: 1280px){
+    transform: translateY(12%);
+}
+}
+
+
+.hero__lables {
+    font-family: Titan One,cursive;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: .04em;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(-34px,-80%);
+@media screen and (max-width: 767px) {
+    display: none;
+}
+}
+.label__items:not(:last-child) {
+    margin-bottom: 30px;
+}
+
+.label__text {
+    position: relative;
+    font-size: 28px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    text-align: left;
+    color: #d41443;
+    @media screen and (min-width: 1280px) {
+    font-size: 46px;
+    line-height: 1.15;
+}
+}
+.label__text:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(-8px,-5px);
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: #fff;
+    z-index: -1;
+    @media screen and (min-width: 1280px) {
+    width: 30px;
+    height: 30px;
+}
+}
+.label__span {
+    font-family: DM Sans,sans-serif;
+    font-size: 8px;
+    line-height: 1.25;
+    color: #fff;
+    @media screen and (min-width: 1280px) {
+    font-size: 14px;
+    line-height: 1.29;
+}
+}
 
   @keyframes icecream {
     100% {
