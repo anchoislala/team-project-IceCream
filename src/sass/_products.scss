@@ -121,14 +121,22 @@
     background-repeat: no-repeat;
     background-image: url(../images/mobile/products/mob-icecream1x.png);
     background-position: center;
-    // margin-top: 100px;
 
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 22px;
+
+    @media screen and (max-width: 767px) {
+      margin-left: 95px;
+    }
+    @media screen and (max-width: 479px) {
+      width: 100%;
+      margin-left: auto;
+    }
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
       background-image: url(../images/mobile/products/mob-icecream2x.png);
       background-size: cover;
+      width: 249px;
     }
 
     @media screen and (min-width: 768px) {
@@ -171,9 +179,14 @@
       background-position: center;
       margin-left: auto;
       margin-right: auto;
+      @media screen and (max-width: 767px) {
+        margin-left: 95px;
+      }
+
       @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
         background-image: url(../images/mobile/products/mob-icecoffee2x.png);
         background-size: cover;
+        width: 249px;
       }
 
       @media screen and (min-width: 768px) {
@@ -216,9 +229,15 @@
       background-position: center;
       margin-left: auto;
       margin-right: auto;
+
+      @media screen and (max-width: 767px) {
+        margin-left: 95px;
+      }
+
       @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
         background-image: url(../images/mobile/products/mob-milkshakes2x.png);
         background-size: cover;
+        width: 249px;
       }
 
       @media screen and (min-width: 768px) {
