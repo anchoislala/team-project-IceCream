@@ -43,3 +43,10 @@
   padding-bottom: $b;
 
 }
+
+
+@mixin fontHeader($fw, $fs, $lh) {
+  font-weight: $fw;
+  font-size: $fs;
+  line-height: $lh;
+}
