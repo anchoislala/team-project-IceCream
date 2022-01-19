@@ -1,15 +1,17 @@
 .gallery {
-  padding-top: 49px;
-  padding-bottom: 40px;
   background-image: linear-gradient($gallery-background-color 45%, $main-background-color 45%);
+
+  @media screen and (max-width: 767px) {
+    padding-top: 49px;
+    padding-bottom: 80px;
+  }
+
   @media screen and (min-width: 768px) {
-    padding-top: 70px;
-    padding-bottom: 61px;
+    padding-bottom: 121px;
   }
 
   @media screen and (min-width: 1280px) {
-    padding-top: 72px;
-    padding-bottom: 62px;
+    padding-bottom: 123px;
   }
 }
 
@@ -115,4 +117,3 @@
   transform: scale(120%);
   z-index: 1;
 }
-
