@@ -4,10 +4,11 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
 
 function myMove() {
+  console.log("myWidth: " + window.screen.width)
     let elem = document.getElementById("myAnimation");
     let pos = 0;
     let image = document.getElementById("footerIce");
-    let clientWidth = document.getElementById('container_fc').clientWidth;
+    let clientWidth = window.screen.width;
     let imageSize = Math.round(clientWidth * 3 / 100);
     let id = null;
     image.style.width = imageSize + 'px';
@@ -15,9 +16,9 @@ function myMove() {
     // console.log("c"+ clientWidth)
     clientWidth = clientWidth - imageSize;
     
-    if (clientWidth > 1240) {
-        clientWidth = clientWidth - 12;
-    }
+    // if (clientWidth > 1240) {
+    //     clientWidth = clientWidth - 12;
+    // }
     // console.log('sum ' + clientWidth)
         let toogleStick = 1;
         id = setInterval(frame, 10);
