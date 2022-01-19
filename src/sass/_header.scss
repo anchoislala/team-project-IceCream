@@ -82,19 +82,27 @@
   transition: opacity $duration $function,
     visibility $duration $function;
     transition: box-shadow $duration $function, transform 250ms cubic-bezier(0.4, 0, 0.2, 1) ;
-    right: -38%;
+    right: -17%;
+  
+  @media screen and (max-width: 1279px) {
     z-index: 800;
     position: fixed;
     height: 100vh;
     top: 0;
-    padding-top: 60px;
-    padding-left: 21px;
+    right: -11%;
     opacity: 0;
     visibility: hidden;
     background-color: $menu-background-color;
     width: 250px;
+    padding-top: 60px;
+    padding-left: 21px;
     flex-direction: column;
-  
+    @media screen and (min-width: 768px) and (max-width: 1279px) {
+      padding-left: 24px;
+      padding-right: 24px;
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+    }
 
     @media screen and (min-width: 400px) {
       right: -31%;
@@ -110,13 +118,6 @@
     @media screen and (min-width: 700px) {
       right: -18%;
     } 
-    
-    @media screen and (min-width: 768px) and (max-width: 1279px) {
-      padding-left: 24px;
-      padding-right: 24px;
-      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-      
-    }
 
     @media screen and (min-width: 900px) {
       right: -14%;
@@ -124,14 +125,7 @@
     @media screen and (min-width: 1050px) {
       right: -12%;
     } 
-
-    @media screen and (min-width: 1280px) {
-      display: none;
-    } 
-
-    
-
- 
+  }
   &.is-open {
     opacity: 1;
     visibility: visible;
