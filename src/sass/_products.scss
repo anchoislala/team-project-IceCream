@@ -85,11 +85,11 @@
   margin-left: auto;
   margin-right: auto;
 
-  &:hover{
+  &:hover {
     transition: transform $duration $function;
 
     &:hover {
-        transform: translateY(-30px);
+      transform: translateY(-30px);
     }
   }
 
@@ -121,9 +121,13 @@
     background-repeat: no-repeat;
     background-image: url(../images/mobile/products/mob-icecream1x.png);
     background-position: center;
+
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 22px;
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url(../images/mobile/products/mob-icecream2x.png);
+    }
 
     @media screen and (min-width: 768px) {
       left: 0px;
@@ -132,6 +136,9 @@
       height: 226px;
       background-image: url(../images/tablet/products/tab-icecream1x.png);
       margin-bottom: 30px;
+      @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+        background-image: url(../images/tablet/products/tab-icecream2x.png);
+      }
     }
 
     @media screen and (min-width: 1280px) {
@@ -141,6 +148,9 @@
       height: 335px;
       background-image: url(../images/desktop/products/desktop-icecream1x.png);
       margin-bottom: 30px;
+      @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+        background-image: url(../images/desktop/products/desktop-icecream2x.png);
+      }
     }
   }
 
@@ -159,6 +169,10 @@
       background-position: center;
       margin-left: auto;
       margin-right: auto;
+      @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+        background-image: url(../images/mobile/products/mob-icecoffee2x.png);
+        background-size: cover;
+      }
 
       @media screen and (min-width: 768px) {
         left: 0px;
@@ -167,6 +181,9 @@
         height: 233px;
         background-image: url(../images/tablet/products/tab-icecoffee-1x.png);
         margin-bottom: 30px;
+        @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+          background-image: url(../images/tablet/products/tab-icecoffee-2x.png);
+        }
       }
 
       @media screen and (min-width: 1280px) {
@@ -175,6 +192,9 @@
         width: 337px;
         height: 335px;
         background-image: url(../images/desktop/products/desktop-icecoffee1x.png);
+        @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+          background-image: url(../images/desktop/products/desktop-icecoffee2x.png);
+        }
       }
     }
   }
@@ -194,6 +214,10 @@
       background-position: center;
       margin-left: auto;
       margin-right: auto;
+      @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+        background-image: url(../images/mobile/products/mob-milkshakes2x.png);
+        // background-size: cover;
+      }
 
       @media screen and (min-width: 768px) {
         left: 0px;
@@ -202,6 +226,9 @@
         height: 224px;
         background-image: url(../images/tablet/products/tab-milkshakes1x.png);
         margin-bottom: 30px;
+        @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+          background-image: url(../images/tablet/products/tab-milkshakes2x.png);
+        }
       }
 
       @media screen and (min-width: 1280px) {
@@ -211,6 +238,9 @@
         height: 335px;
         background-image: url(../images/desktop/products/desktop-milkshakes1x.png);
         margin-bottom: 30px;
+        @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+          background-image: url(../images/desktop/products/desktop-milkshakes2x.png);
+        }
       }
     }
   }
@@ -319,20 +349,18 @@
   fill: $button-accent-hover-color;
 }
 
-.modal__description{
+.modal__description {
   text-align: left;
   white-space: pre-line;
 
   @media screen and (min-width: 480px) {
     min-width: 420px;
     min-height: 90%;
-    
   }
 
   @media screen and (min-width: 768px) {
     min-width: 500px;
     margin-left: -142px;
-    
   }
 
   @media screen and (min-width: 1280px) {
@@ -341,18 +369,15 @@
   }
 }
 
-.modal__product{
+.modal__product {
   margin-left: 0;
   margin-right: 0;
-  
-  
 }
 
-.modal__grid{
+.modal__grid {
   align-items: center;
   justify-content: center;
 }
-
 
 .backdrop__cream {
   width: 100vw;
@@ -363,46 +388,42 @@
   left: 0;
   z-index: 500;
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transform 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal_cream{
+.modal_cream {
   min-width: 320px;
   min-height: 90%;
-    padding: 80px 30px 30px 30px;
-    justify-content: center;
-    align-items: center;
-    background-color: $cream-card-background-color;
-    border-radius: 24px;
-    border: 1px solid transparent;
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-      0px 2px 1px rgba(0, 0, 0, 0.2);
-      overflow: scroll;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: scale(1) rotate(0) translate(-50%, -50%);
-    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
-      box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-      white-space: pre-line;
-  
-    @media screen and (min-width: 480px) {
-      min-width: 400px;
+  padding: 80px 30px 30px 30px;
+  justify-content: center;
+  align-items: center;
+  background-color: $cream-card-background-color;
+  border-radius: 24px;
+  border: 1px solid transparent;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  overflow: scroll;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: scale(1) rotate(0) translate(-50%, -50%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  white-space: pre-line;
 
-    }
+  @media screen and (min-width: 480px) {
+    min-width: 400px;
+  }
 
-    @media screen and (min-width: 768px) {
-      min-width: 600px;
-    
-    }
-  
-    @media screen and (min-width: 1280px) {
-      min-width: 800px;
-      padding-top: 135px;
-    }
+  @media screen and (min-width: 768px) {
+    min-width: 600px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    min-width: 800px;
+    padding-top: 135px;
+  }
 }
-
 
 .backdrop__coffee {
   width: 100vw;
@@ -413,50 +434,46 @@
   left: 0;
   z-index: 500;
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transform 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal_coffee{
+.modal_coffee {
   min-width: 320px;
   min-height: 90%;
-    padding: 80px 30px 30px 30px;
-    justify-content: center;
-    align-items: center;
-    background-color: $coffee-card-background-color;
-    border-radius: 24px;
-    border: 1px solid transparent;
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-      0px 2px 1px rgba(0, 0, 0, 0.2);
-      overflow: scroll;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: scale(1) rotate(0) translate(-50%, -50%);
-    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
-      box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-      white-space: pre-line;
-  
-    @media screen and (min-width: 480px) {
-      min-width: 400px;
+  padding: 80px 30px 30px 30px;
+  justify-content: center;
+  align-items: center;
+  background-color: $coffee-card-background-color;
+  border-radius: 24px;
+  border: 1px solid transparent;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  overflow: scroll;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: scale(1) rotate(0) translate(-50%, -50%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  white-space: pre-line;
 
-    }
+  @media screen and (min-width: 480px) {
+    min-width: 400px;
+  }
 
-    @media screen and (min-width: 768px) {
-      min-width: 600px;
-    
-    }
-  
-    @media screen and (min-width: 1280px) {
-      min-width: 800px;
-      padding-top: 135px;
-    }
+  @media screen and (min-width: 768px) {
+    min-width: 600px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    min-width: 800px;
+    padding-top: 135px;
+  }
 }
 
-.backdrop__cream.is-hidden .modal_cream, 
+.backdrop__cream.is-hidden .modal_cream,
 .backdrop__coffee.is-hidden .modal_coffee,
-.backdrop__milkshakes.is-hidden .modal_milkshakes{
-
+.backdrop__milkshakes.is-hidden .modal_milkshakes {
   transform: scale(1.5) rotate(180deg) translate(100px, 100px);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -470,42 +487,39 @@
   left: 0;
   z-index: 500;
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transform 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal_milkshakes{
+.modal_milkshakes {
   min-width: 320px;
   min-height: 90%;
-    padding: 80px 30px 30px 30px;
-    justify-content: center;
-    align-items: center;
-    background-color: $shake-card-background-color;
-    border-radius: 24px;
-    border: 1px solid transparent;
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-      0px 2px 1px rgba(0, 0, 0, 0.2);
-      overflow: scroll;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: scale(1) rotate(0) translate(-50%, -50%);
-    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
-      box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-      white-space: pre-line;
-  
-    @media screen and (min-width: 480px) {
-      min-width: 400px;
+  padding: 80px 30px 30px 30px;
+  justify-content: center;
+  align-items: center;
+  background-color: $shake-card-background-color;
+  border-radius: 24px;
+  border: 1px solid transparent;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  overflow: scroll;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: scale(1) rotate(0) translate(-50%, -50%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  white-space: pre-line;
 
-    }
+  @media screen and (min-width: 480px) {
+    min-width: 400px;
+  }
 
-    @media screen and (min-width: 768px) {
-      min-width: 600px;
-    
-    }
-  
-    @media screen and (min-width: 1280px) {
-      min-width: 800px;
-      padding-top: 135px;
-    }
+  @media screen and (min-width: 768px) {
+    min-width: 600px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    min-width: 800px;
+    padding-top: 135px;
+  }
 }
