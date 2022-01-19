@@ -189,14 +189,23 @@
   }
 }
 
-@media screen and (min-width: 1280px) {
-  #myAnimation {
-    position: absolute;
-  }
+#myAnimation {
+  position: absolute;
 }
 
 .footer__animation {
-  @media screen and (max-width: 1279px) {
-    display: none;
+  display: flex;
+  align-items: center;
+
+  @media screen and (min-width: 480px) {
+    height: 38px;
+  }
+
+  @media screen and (min-width: 768px) {
+    height: 130px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    height: 120px;
   }
 }
