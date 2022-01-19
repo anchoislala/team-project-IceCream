@@ -59,6 +59,7 @@
   list-style: none;
   margin-bottom: 16px;
   @media (min-width: 768px) {
+        margin-bottom: 36px;
 
 
   }
@@ -122,3 +123,6 @@
   }
 }
 
+.advantages__container{
+  padding-left: 36px;
+}
