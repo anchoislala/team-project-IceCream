@@ -41,7 +41,11 @@
   line-height: 0.85;
   text-align: center;
   text-transform: uppercase;
-  @media  screen and (min-width: 1280px) {
+  @media screen and (min-width: 768px) {
+    font-size: 26px;
+    line-height: 1.15;
+  }
+  @media screen and (min-width: 1280px) {
     font-size: 30px;
     line-height: 1.15;
   }
@@ -58,9 +62,12 @@
   text-transform: uppercase;
   @media screen and (min-width: 768px) {
     margin-bottom: 50px;
+    font-size: 48px;
+    line-height: 1.14;
   }
-  @media  screen and (min-width: 1280px) {
+  @media screen and (min-width: 1280px) {
     font-size: 58px;
+    line-height: 1.13;
   }
 }
 
@@ -92,10 +99,10 @@
   max-width: 100%;
   width: 463px;
   @media screen and(min-width: 768px) {
-  padding-top: 40px;
+    padding-top: 40px;
   }
   @media screen and(min-width: 1280px) {
-  padding-top: 0;
+    padding-top: 0;
   }
 }
 
@@ -165,8 +172,6 @@
   vertical-align: baseline;
 }
 
-
-
 // tablet
 
 .about__tablet {
@@ -190,7 +195,7 @@
 
 // modal
 
-.modal_about{
+.modal_about {
   background: no-repeat url(../images/desktop/hero/icecream-1x.png) center;
 }
 
@@ -207,7 +212,7 @@
 
 .about__modal-item {
   margin-bottom: 10px;
-  width:100%;
+  width: 100%;
   background-color: #fff;
   border-radius: 10%;
 }
