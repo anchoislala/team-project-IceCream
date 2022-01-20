@@ -65,13 +65,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: linear-gradient(
-    to bottom,
-    #e1e1e1,
-    #e1e1e1 1px,
-    #fafafa 1px,
-    #fafafa
-  );
+  background: linear-gradient(to bottom, #e1e1e1, #e1e1e1 1px, #fafafa 1px, #fafafa);
   background-size: 100% 30px;
 }
 
@@ -275,27 +269,75 @@
 
 .slider-point-1,
 .slider-point-1 + span {
-  left: 47%;
+  left: 39%;
   margin-right: 18px;
 
   @media screen and (max-width: 767px) {
-    left: 35%;
+    left: 22%;
   }
 }
 
 .slider-point-2,
 .slider-point-2 + span {
-  left: 50%;
+  left: 42%;
   margin-right: 18px;
+  @media screen and (max-width: 767px) {
+    left: 30%;
+  }
 }
 
 .slider-point-3,
 .slider-point-3 + span {
-  left: 53%;
+  left: 45%;
   margin-right: 18px;
 
   @media screen and (max-width: 767px) {
-    left: 65%;
+    left: 38%;
+  }
+}
+.slider-point-4,
+.slider-point-4 + span {
+  left: 48%;
+  margin-right: 18px;
+
+  @media screen and (max-width: 767px) {
+    left: 46%;
+  }
+}
+.slider-point-5,
+.slider-point-5 + span {
+  left: 51%;
+  margin-right: 18px;
+
+  @media screen and (max-width: 767px) {
+    left: 54%;
+  }
+}
+.slider-point-6,
+.slider-point-6 + span {
+  left: 54%;
+  margin-right: 18px;
+
+  @media screen and (max-width: 767px) {
+    left: 62%;
+  }
+}
+.slider-point-7,
+.slider-point-7 + span {
+  left: 57%;
+  margin-right: 18px;
+
+  @media screen and (max-width: 767px) {
+    left: 70%;
+  }
+}
+.slider-point-8,
+.slider-point-8 + span {
+  left: 60%;
+  margin-right: 18px;
+
+  @media screen and (max-width: 767px) {
+    left: 78%;
   }
 }
 
@@ -325,3 +367,45 @@
   visibility: visible;
   opacity: 1;
 }
+.slider-point-4:checked + span {
+  background-image: url(../images/png/vector.png);
+}
+
+.slider-point-4:checked ~ ul > li:nth-child(4) {
+  visibility: visible;
+  opacity: 1;
+}
+.slider-point-5:checked + span {
+  background-image: url(../images/png/vector.png);
+}
+
+.slider-point-5:checked ~ ul > li:nth-child(5) {
+  visibility: visible;
+  opacity: 1;
+}
+.slider-point-6:checked + span {
+  background-image: url(../images/png/vector.png);
+}
+
+.slider-point-6:checked ~ ul > li:nth-child(6) {
+  visibility: visible;
+  opacity: 1;
+}
+.slider-point-7:checked + span {
+  background-image: url(../images/png/vector.png);
+}
+
+.slider-point-7:checked ~ ul > li:nth-child(7) {
+  visibility: visible;
+  opacity: 1;
+}
+.slider-point-8:checked + span {
+  background-image: url(../images/png/vector.png);
+}
+
+.slider-point-8:checked ~ ul > li:nth-child(8) {
+  visibility: visible;
+  opacity: 1;
+}
+
+
