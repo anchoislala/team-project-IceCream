@@ -197,6 +197,10 @@
 
 .modal_about {
   background: no-repeat url(../images/desktop/hero/icecream-1x.png) center;
+  ::-webkit-scrollbar {
+    width: 0px;
+    background: rgba(255, 255, 255, 0);
+  }
 }
 
 .about__title-modal {
