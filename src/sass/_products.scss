@@ -430,7 +430,7 @@
 
 .modal_cream {
   min-width: 320px;
-  min-height: 90%;
+  height: 90%;
   padding: 80px 30px 30px 30px;
   justify-content: center;
   align-items: center;
@@ -450,6 +450,7 @@
 
   @media screen and (min-width: 480px) {
     min-width: 400px;
+    min-height: 90%;
     overflow: hidden;
   }
 
@@ -477,7 +478,7 @@
 
 .modal_coffee {
   min-width: 320px;
-  min-height: 90%;
+  height: 90%;
   padding: 80px 30px 30px 30px;
   justify-content: center;
   align-items: center;
@@ -498,6 +499,7 @@
   @media screen and (min-width: 480px) {
     min-width: 400px;
     overflow: hidden;
+    min-height: 90%;
   }
 
   @media screen and (min-width: 768px) {
@@ -531,7 +533,7 @@
 
 .modal_milkshakes {
   min-width: 320px;
-  min-height: 90%;
+  height: 90%;
   padding: 80px 30px 30px 30px;
   justify-content: center;
   align-items: center;
@@ -552,6 +554,7 @@
   @media screen and (min-width: 480px) {
     min-width: 400px;
     overflow: hidden;
+    min-height: 90%;
   }
 
   @media screen and (min-width: 768px) {
