@@ -5,6 +5,7 @@
   background-repeat: no-repeat;
   background-size: contain;
   background-position: 50% 90%;
+  padding-bottom: 40px;
   @media screen and (min-width: 768px) {
     background-image: none;
     padding-top: 130px;
@@ -40,8 +41,13 @@
   line-height: 0.85;
   text-align: center;
   text-transform: uppercase;
-  @media  screen and (min-width: 1280px) {
+  @media screen and (min-width: 768px) {
+    font-size: 26px;
+    line-height: 1.15;
+  }
+  @media screen and (min-width: 1280px) {
     font-size: 30px;
+    line-height: 1.15;
   }
 }
 
@@ -51,23 +57,28 @@
   font-family: $secondary-font;
   font-weight: normal;
   font-size: 34px;
-  line-height: 0.87;
+  line-height: 1.14;
   text-align: center;
   text-transform: uppercase;
   @media screen and (min-width: 768px) {
     margin-bottom: 50px;
+    font-size: 48px;
+    line-height: 1.14;
   }
-  @media  screen and (min-width: 1280px) {
+  @media screen and (min-width: 1280px) {
     font-size: 58px;
+    line-height: 1.13;
   }
 }
 
 .about__wrapper-image {
   min-width: 280px;
   margin-right: 15px;
+  padding-bottom: 45px;
   @media screen and (min-width: 768px) {
     min-width: 340px;
     margin-right: 17px;
+    padding-bottom: 0px;
   }
   @media screen and(min-width: 1280px) {
     min-width: 516px;
@@ -78,13 +89,21 @@
 .about__img {
   display: block;
   height: auto;
-  animation: float 3s $function infinite;
   width: 100%;
-  height: auto;
+  @media screen and(min-width: 1280px) {
+    animation: float 3s $function infinite;
+  }
 }
 
 .about__wraper {
+  max-width: 100%;
   width: 463px;
+  @media screen and(min-width: 768px) {
+    padding-top: 40px;
+  }
+  @media screen and(min-width: 1280px) {
+    padding-top: 0;
+  }
 }
 
 .about__text {
@@ -120,7 +139,7 @@
   }
   @media screen and (min-width: 1280px) {
     font-size: 14px;
-    line-height: 1.94;
+    line-height: 1.78;
     height: 155px;
     margin-bottom: 45px;
   }
@@ -153,14 +172,11 @@
   vertical-align: baseline;
 }
 
-
-
 // tablet
 
 .about__tablet {
   @media screen and (min-width: 768px) {
     display: flex;
-    align-items: flex-end;
     margin-bottom: 56px;
   }
   @media screen and(min-width: 1280px) {
@@ -172,14 +188,16 @@
 .about__desktop {
   display: none;
   @media screen and (min-width: 1280px) {
-    width: 1280px;
-    margin: 0 auto;
     display: flex;
     align-items: center;
   }
 }
 
 // modal
+
+.modal_about {
+  background: no-repeat url(../images/desktop/hero/icecream-1x.png) center;
+}
 
 .about__title-modal {
   margin-bottom: 50px;
@@ -194,6 +212,9 @@
 
 .about__modal-item {
   margin-bottom: 10px;
+  width: 100%;
+  background-color: #fff;
+  border-radius: 10%;
 }
 
 .about__modal-text {
