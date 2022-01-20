@@ -415,7 +415,6 @@
   border: 1px solid transparent;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
-  // overflow: scroll;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -461,7 +460,6 @@
   border: 1px solid transparent;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
-  // overflow: scroll;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -514,7 +512,6 @@
   border: 1px solid transparent;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
-  // overflow: scroll;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -534,5 +531,14 @@
   @media screen and (min-width: 1280px) {
     min-width: 800px;
     padding-top: 135px;
+  }
+}
+
+.product_title{
+  margin-top: 130px;
+
+  @media screen and (min-width: 480px) {
+    margin-top: 110px;
+    
   }
 }
