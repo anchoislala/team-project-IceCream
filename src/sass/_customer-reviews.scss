@@ -341,16 +341,6 @@
   }
 }
 
-.slider-point-9,
-.slider-point-9 + span {
-  left: 60%;
-  margin-right: 18px;
-
-  @media screen and (max-width: 767px) {
-    left: 78%;
-  }
-}
-
 .slider-point-1:checked + span {
   background-image: url(../images/png/vector.png);
 }
